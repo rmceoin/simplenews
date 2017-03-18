@@ -1,0 +1,12 @@
+#!/bin/sh
+
+poller="i-08f7f68f257516715"
+#aws ec2 start-instances --instance-ids $poller
+
+#aws ssm send-command --instance-ids $poller --document-name "AWS-RunShellScript" --comment "Demo run shell script on Linux Instance" --parameters commands=whoami --output text --query "Command.CommandId"
+
+aws ssm send-command --instance-ids $poller --document-name "AWS-RunShellScript" --comment "IP config" --parameters commands=ifconfig --output text
+
+aws ssm send-command --instance-ids $poller --document-name "AWS-RunShellScript" --comment "IP config" --parameters commands=simplenews/poller.py --output text
+
+
