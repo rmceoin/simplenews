@@ -1,5 +1,7 @@
 #!/bin/sh
 
+sudo yum -y install gcc libxml2-devel libxslt-devel
+
 sudo pip install lxml
 sudo pip install requests
 
