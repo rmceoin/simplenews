@@ -1,0 +1,2 @@
+# simplenews
+Simplify news sites
