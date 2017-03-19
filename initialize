@@ -1,7 +1,17 @@
 #!/bin/sh
 
+# on Ubuntu
+# sudo apt-get install python-dev libmysqlclient-dev
+#
+#sudo yum -y install python-devel libmysqlclient-devel
+
+# Ubuntu
+# sudo apt install python-mysql.connector
+
+sudo yum -y install MySQL-python27
 sudo yum -y install gcc libxml2-devel libxslt-devel
 
 sudo pip install lxml
 sudo pip install requests
+sudo pip install pyyaml
 
