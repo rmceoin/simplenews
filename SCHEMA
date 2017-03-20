@@ -1,0 +1,12 @@
+
+drop table Articles;
+CREATE TABLE Articles (
+  Id int auto_increment primary key,
+  URL TEXT,
+  title TEXT,
+  headline CHAR(129),
+  article TEXT,
+  key URL (URL(100))
+);
+
+

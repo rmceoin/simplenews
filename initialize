@@ -8,10 +8,20 @@
 # Ubuntu
 # sudo apt install python-mysql.connector
 
+# to help with debugging...
+sudo yum -y install mysql
+
 sudo yum -y install MySQL-python27
 sudo yum -y install gcc libxml2-devel libxslt-devel
 
 sudo pip install lxml
 sudo pip install requests
 sudo pip install pyyaml
+sudo pip install mysql-connector
+
+pip install flask-restful
+git clone https://github.com/flask-restful/flask-restful.git
+cd flask-restful
+sudo python setup.py develop
+
 

@@ -1,4 +1,7 @@
 ---
-dbpass: "changethis"
-
+mysql:
+ host: "puthostnamehere"
+ user: "simple"
+ pass: "passwordhere"
+ database: "simpledb"
 
